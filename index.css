@@ -50,7 +50,7 @@ main {
 .home, .services, .contact {
     display: flex;
     flex-direction: column;
-    padding: 0 3.125rem;
+    padding: 1rem 3.125rem;
 }
 
 footer {
@@ -61,4 +61,16 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Media queries */
+
+/* @media (width <= 599px) */
+@media (max-width: 599px) {
+    
+}
+
+/* @media (width >= 600px) */
+@media (min-width: 600px) {
+    
 }
