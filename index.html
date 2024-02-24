@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Favicon -->
 
+        <!-- Font Awesome CDN -->
+
         <!-- Google Fonts -->
 
         <!-- CSS -->
@@ -13,39 +15,145 @@
     <body>
         <div class="container">
             <header>
-                <h1>Repair Services</h1>
+                <h1 class="logo">Repair Services</h1>
+                <!-- <img class="logo" src="#"> -->
                 <nav>
                     <ul>
-                        <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
+                        <li><a href="#about-us">About us</a></li>
+                        <li><a href="#feedback">About you</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
+                <button>Call us</button>
             </header>
-            <main class="main">
-                <section class="home">
-                    <h2>Welcome to Repair Services</h2>
-                    <p>Your go-to solution for household appliances and computer repairs.</p>
+            <main>
+                <section class="top">
+                    <div>
+                        <h2>Welcome to Repair Services</h2>
+                        <p>Your go-to solution for computer and household appliances repair.</p>
+                        <button>Call us</button>
+                    </div>
+                    <div>
+                        <img class="top-image" src="#">
+                    </div>
                 </section>
 
-                <section class="services">
-                    <h2>Our Services</h2>
-                    <ul>
-                        <li>Household Appliance Repair</li>
-                        <li>Computer Repair</li>
-                        <!-- Add more services as needed -->
-                    </ul>
+                <section class="services" id="services">
+                    <h2>Our services</h2>
+                    <div class="services-feed">
+                        <div>
+                            <img class="service-image" src="#">
+                            <p>Computer repair</p>
+                        </div>
+                        <div>
+                            <img class="service-image" src="#">
+                            <p>Computer repair</p>
+                        </div>
+                        <div>
+                            <img class="service-image" src="#">
+                            <p>Computer repair</p>
+                        </div>
+                        <div>
+                            <img class="service-image" src="#">
+                            <p>Computer repair</p>
+                        </div>
+                        <div>
+                            <img class="service-image" src="#">
+                            <p>Computer repair</p>
+                        </div>
+                        <div>
+                            <img class="service-image" src="#">
+                            <p>Computer repair</p>
+                        </div>
+                    </div>
+
                 </section>
 
-                <section class="contact">
-                    <h2>Contact Us</h2>
-                    <p>Reach out to us for reliable and prompt repair services.</p>
-                    <!-- Include a contact form or contact information here -->
+                <section class="about-us" id="about-us">
+                    <div>
+                        <h2>About us</h2>
+                        <p>We have been working since the first computer appeared in the world</p>
+                        <button>Call us</button>
+                    </div>
+                    <div>
+                        <img class="about-image" src="#">
+                    </div>
+                </section>
+
+                <section class="feedback" id="feedback">
+                    <h2>Feedback from our clients</h2>
+                    <div class="feedback-feed">
+                        <div class="review">
+                            <img class="review-image" src="#">
+                            <h4>Name</h4>
+                            <p>Body copy goes here remember this is a long text with a paragraph</p>
+                        </div>
+                        <div class="review">
+                            <img class="review-image" src="#">
+                            <h4>Name</h4>
+                            <p>Body copy goes here remember this is a long text with a paragraph</p>
+                        </div>
+                        <div class="review">
+                            <img class="review-image" src="#">
+                            <h4>Name</h4>
+                            <p>Body copy goes here remember this is a long text with a paragraph</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="questions" id="question">
+                    <h2>Frequently asked questions</h2>
+                    <div class="questions-feed">
+                        <div class="question-container">
+                            <h4 class="question">Question</h4>
+                            <p class="answer">Body copy goes here remember this is a long text with a paragraph</p>
+                        </div>
+                        <div class="question-container">
+                            <h4 class="question">Question</h4>
+                            <p class="answer">Body copy goes here remember this is a long text with a paragraph</p>
+                        </div>
+                        <div class="question-container">
+                            <h4 class="question">Question</h4>
+                            <p class="answer">Body copy goes here remember this is a long text with a paragraph</p>
+                        </div>
+                        <div class="question-container">
+                            <h4 class="question">Question</h4>
+                            <p class="answer">Body copy goes here remember this is a long text with a paragraph</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact" id="contact">
+                    <div>
+                        <img class="map-image" src="#">
+                    </div>
+                    <div>
+                        <h2>Contact us</h2>
+                        <p>Reach out to us for reliable and prompt repair services.</p>
+                        <!-- Include a contact form or contact information here -->
+                        <button>Call us</button>
+                    </div>
                 </section>
             </main>
 
             <footer>
-                <p>&copy; 2024 Repair Services</p>
+                <div class="footer-menu">
+                    <h1 class="logo">Repair Services</h1>
+                    <!-- <img class="logo" src="#"> -->
+                    <nav>
+                        <ul>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">About you</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button>Call us</button>
+                </div>
+                <div>
+                    <p class="copy-info">&copy; 2024 Repair Services</p>
+                </div>
             </footer>
         </div>
         <script src="index.js" type="module"></script>
