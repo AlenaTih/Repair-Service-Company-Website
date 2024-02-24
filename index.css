@@ -24,6 +24,10 @@ header {
     text-align: center;
 }
 
+.main {
+    padding-bottom: 6rem;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
