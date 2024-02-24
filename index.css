@@ -4,6 +4,8 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #070B0E;
+    background-color: whitesmoke;
     margin: 0;
     padding: 0;
 }
@@ -58,7 +60,7 @@ section.top {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    padding: 1rem 2.5rem 2.5rem 2.5rem;
+    padding: 1rem 2.5rem 3.5rem 2.5rem;
     border-bottom: 1px solid darkgray;
 }
 
@@ -82,7 +84,7 @@ section.about-us {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    padding: 2.5rem;
+    padding: 2.5rem 2.5rem 3.5rem 2.5rem;
     border-bottom: 1px solid darkgray;
 }
 
@@ -130,7 +132,7 @@ section.contact {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    padding: 1rem 2.5rem 2.5rem 2.5rem;
+    padding: 3.5rem 2.5rem 2.5rem 2.5rem;
 }
 
 nav ul {
@@ -173,6 +175,8 @@ footer {
 /* Buttons */
 
 button {
+    font-family: inherit;
+    color: #070B0E;
     border-radius: 8px;
     cursor: pointer;
 }
