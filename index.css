@@ -14,19 +14,22 @@ body {
 
 h1.logo {
     font-size: 1rem;
+    cursor: pointer;
 }
 
 p.answer {
     margin-top: 0;
 }
 
-/* .services h2,
-.feedback h2,
-.questions h2 {
-    margin-left: 12rem;
-} */
+i {
+    cursor: pointer;
+}
 
 /* Layout */
+
+main {
+    padding: 2.5rem 0;
+}
 
 .container {
     display: flex;
@@ -51,8 +54,35 @@ header {
     width: 100%;
 }
 
-main {
-    padding: 2.5rem 0;
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mobile-menu-container {
+    display: none; /* flex when displayed */
+    flex-direction: column;
+    background-color: #090909;
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    display: inline;
+    margin-right: 1.25rem;
+    cursor: pointer;
 }
 
 section.top {
@@ -135,23 +165,6 @@ section.contact {
     padding: 3.5rem 2.5rem 2.5rem 2.5rem;
 }
 
-nav ul {
-    list-style-type: none;
-    /* margin: 0; */
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin-right: 1.25rem;
-}
-
-nav a {
-    text-decoration: none;
-    color: whitesmoke;
-    font-weight: bold;
-}
-
 footer {
     display: flex;
     flex-direction: column;
@@ -208,15 +221,27 @@ button {
 
 /* Links */
 
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
 /* Media queries */
 
 /* @media (width <= 599px) */
 @media (max-width: 599px) {
-    
+    .desktop-nav {
+        display: none;
+    }
 }
 
 /* @media (width >= 600px) */
 @media (min-width: 600px) {
+    .mobile-nav {
+        display: none;
+    }
+
     section {
         width: 80%;
     }
