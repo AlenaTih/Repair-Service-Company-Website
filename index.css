@@ -7,6 +7,10 @@ body {
     color: #070B0E;
     /* color: whitesmoke; */
     background-color: #E1DCD9;
+    /* background-image: url(images/background-image.png); */
+    /* background: no-repeat center center fixed; */
+    /* background-position: center;
+    background-size: cover; */
     margin: 0;
     padding: 0;
 }

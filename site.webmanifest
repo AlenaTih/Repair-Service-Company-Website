@@ -1,0 +1,11 @@
+{
+    "name": "Repair Services",
+    "short_name": "Repair Services",
+    "icons":
+        [
+            {"src": "android-chrome-192x192.png", "sizes": "192x192", "type": "image/x-icon"},
+            {"src": "android-chrome-512x512.png", "sizes": "512x512", "type": "image/x-icon"}
+        ],
+    "theme_color": "#E1DCD9",
+    "background_color": "#E1DCD9",
+    "display": "standalone"}
