@@ -5,7 +5,8 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #070B0E;
-    background-color: whitesmoke;
+    /* color: whitesmoke; */
+    background-color: #E1DCD9;
     margin: 0;
     padding: 0;
 }
@@ -13,7 +14,7 @@ body {
 /* Typography and icons */
 
 h1.logo {
-    font-size: 1rem;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
@@ -49,7 +50,8 @@ header {
     justify-content: space-around;
     color: whitesmoke;
     text-align: center;
-    background-color: #333;
+    /* background-color: #070B0E; */
+    background-color: #111827;
     padding: 2.5rem;
     width: 100%;
 }
@@ -97,16 +99,33 @@ section.top {
 section.services {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 2.5rem;
     border-bottom: 1px solid darkgray;
 }
 
 div.services-feed {
     display: flex;
+    /* flex-direction: column; */
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-    margin: 1rem 0;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+div.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.service-card p {
+    width: 100%;
 }
 
 section.about-us {
@@ -114,13 +133,14 @@ section.about-us {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+    padding: 3.5rem 2.5rem 3.5rem 2.5rem;
     border-bottom: 1px solid darkgray;
 }
 
 section.feedback {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 2.5rem;
     border-bottom: 1px solid darkgray;
 }
@@ -130,39 +150,70 @@ div.feedback-feed {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-    margin: 1rem 0;
+    width: 100%;
+    margin: 2rem auto 0 auto;
 }
 
 div.review {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    align-items: center;
+    width: 100%;
 }
 
 section.questions {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 2.5rem;
     border-bottom: 1px solid darkgray;
 }
 
+/* .questions h2 {
+    align-self: flex-start;
+} */
+
 div.questions-feed {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 2rem;
 }
 
 div.question-container {
     display: flex;
     flex-direction: column;
+    padding: 1.5rem 0 2rem 0;
+    border-bottom: 1px solid whitesmoke;
+}
+
+div.question-container:nth-of-type(1) {
+    border-top: 1px solid whitesmoke;
+}
+
+div.question-container:last-of-type {
+    border-bottom: none;
 }
 
 section.contact {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 1rem;
     padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+input {
+    background-color: whitesmoke;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
 }
 
 footer {
@@ -172,9 +223,10 @@ footer {
     justify-content: space-around;
     color: whitesmoke;
     text-align: center;
-    background-color: #333;
+    /* background-color: #070B0E; */
+    background-color: #111827;
     width: 100%;
-    padding: 2.5rem;
+    padding: 3.5rem 2.5rem 2.5rem;
 }
 
 .footer-menu {
@@ -190,8 +242,17 @@ footer {
 button {
     font-family: inherit;
     color: #070B0E;
+    background-color: whitesmoke;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border: none;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.submit-button {
+    color: whitesmoke;
+    background-color: #67595E;
 }
 
 /* Images */
@@ -199,15 +260,16 @@ button {
 .top-image,
 .about-image,
 .map-image {
-    height: 120px;
-    width: 120px;
+    height: 150px;
+    width: 300px;
     border-radius: 8px;
     border: 1px solid darkblue;
 }
 
 .service-image {
-    height: 75px;
-    width: 75px;
+    height: 100px;
+    width: 150px;
+    /* align-self: flex-start; */
     border-radius: 8px;
     border: 1px solid darkblue;
 }
@@ -234,10 +296,38 @@ nav a {
     .desktop-nav {
         display: none;
     }
+
+    .desktop-nav-footer {
+        display: none;
+    }
+
+    section.top,
+    section.about-us,
+    section.contact {
+        flex-direction: column;
+    }
+
+    .top-image,
+    .about-image {
+        margin-top: 2rem;
+    }
+
 }
 
 /* @media (width >= 600px) */
 @media (min-width: 600px) {
+    /* Typography */
+
+    h1.logo {
+        font-size: 2.5rem;
+    }
+
+    /* Layout */
+
+    header {
+        height: 200px;
+    }
+    
     .mobile-nav {
         display: none;
     }
@@ -245,4 +335,49 @@ nav a {
     section {
         width: 80%;
     }
+
+    div.service-card {
+        width: 40%;
+    }
+
+    div.review {
+        width: 25%;
+    }
+
+    form {
+        margin-top: 4.5rem;
+    }
+
+    footer {
+        height: 300px;
+    }
+
+    .desktop-nav-footer {
+        margin-bottom: 0;
+    }
+
+    p.copy-info {
+        margin-top: 0;
+    }
+
+    /* Images */
+
+    .top-image,
+    .about-image,
+    .map-image {
+        height: 400px;
+        width: 400px;
+    }
+
+    .service-image {
+        height: 200px;
+        width: 200px;
+        align-self: flex-start;
+    }
+
+    .review-image {
+        height: 100px;
+        width: 100px;
+    }
+
 }

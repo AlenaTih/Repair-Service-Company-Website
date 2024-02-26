@@ -6,6 +6,8 @@ document.addEventListener("click", function(e) {
     }
 })
 
+window.addEventListener("click", rootClick)
+
 function showMenu() {
     mobileNav.innerHTML = `
     <div class="mobile-menu-container" id="mobile-menu-container">
@@ -18,4 +20,19 @@ function showMenu() {
     </div>`
     document.getElementById("mobile-menu-container").style.display = "flex"
     document.getElementById("mobile-menu-container").style.flexDirection = "column"
+}
+
+function rootClick(e) {
+    if (mobileNav &&
+        document.getElementById("mobile-menu-container") &&
+        document.getElementById("mobile-menu-container").style.display === "flex" &&
+        e.target.id !== "mobile-nav" &&
+        e.target.id !== "hamburger" &&
+        e.target.id !== "mobile-menu-container" &&
+        !mobileNav.contains(e.target)) {
+            // Element clicked was not the mobile nav or its children — close the mobile nav
+            document.getElementById("mobile-menu-container").style.display = "none"
+            mobileNav.innerHTML = `
+                <i class="fa-solid fa-bars" id="hamburger"></i>`
+        }
 }

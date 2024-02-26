@@ -17,11 +17,8 @@
     <body>
         <div class="container">
             <header>
-                <h1 class="logo">Repair Services</h1>
+                <h1 class="logo">Orbita</h1>
                 <!-- <img class="logo" src="#"> -->
-                <nav class="mobile-nav" id="mobile-nav">
-                    <i class="fa-solid fa-bars" id="hamburger"></i>
-                </nav>
 
                 <nav class="desktop-nav">
                     <ul>
@@ -32,11 +29,15 @@
                     </ul>
                 </nav>
                 <button>Call us</button>
+
+                <nav class="mobile-nav" id="mobile-nav">
+                    <i class="fa-solid fa-bars" id="hamburger"></i>
+                </nav>
             </header>
             <main>
                 <section class="top">
                     <div>
-                        <h2>Welcome to Repair Services</h2>
+                        <h2>Welcome to Orbita Repair Services</h2>
                         <p>Your go-to solution for computer and household appliances repair.</p>
                         <button>Call us</button>
                     </div>
@@ -48,29 +49,29 @@
                 <section class="services" id="services">
                     <h2>Our services</h2>
                     <div class="services-feed">
-                        <div>
+                        <div class="service-card">
                             <img class="service-image" src="#">
-                            <p>Computer repair</p>
+                            <p>Computer repair: professional repair services for all your computer needs.</p>
                         </div>
-                        <div>
+                        <div class="service-card">
                             <img class="service-image" src="#">
-                            <p>Computer repair</p>
+                            <p>Appliance repair: from washing machines to refrigerators, we've got you covered.</p>
                         </div>
-                        <div>
+                        <div class="service-card">
                             <img class="service-image" src="#">
-                            <p>Computer repair</p>
+                            <p>Electronic device repair: we fix smartphones, tablets, and more.</p>
                         </div>
-                        <div>
+                        <div class="service-card">
                             <img class="service-image" src="#">
-                            <p>Computer repair</p>
+                            <p>Home networking setup: get your home network up and running smoothly.</p>
                         </div>
-                        <div>
+                        <div class="service-card">
                             <img class="service-image" src="#">
-                            <p>Computer repair</p>
+                            <p>Software troubleshooting: solving software issues to keep your devices running smoothly.</p>
                         </div>
-                        <div>
+                        <div class="service-card">
                             <img class="service-image" src="#">
-                            <p>Computer repair</p>
+                            <p>Data recovery: we can help retrieve lost data from your devices.</p>
                         </div>
                     </div>
 
@@ -79,7 +80,9 @@
                 <section class="about-us" id="about-us">
                     <div>
                         <h2>About us</h2>
-                        <p>We have been working since the first computer appeared in the world</p>
+                        <p>We have been dedicated to providing top-notch repair services since the advent of computers. 
+                            With years of experience under our belt, we guarantee quality service and customer satisfaction.
+                        </p>
                         <button>Call us</button>
                     </div>
                     <div>
@@ -92,18 +95,18 @@
                     <div class="feedback-feed">
                         <div class="review">
                             <img class="review-image" src="#">
-                            <h4>Name</h4>
-                            <p>Body copy goes here remember this is a long text with a paragraph</p>
+                            <h4>John Doe</h4>
+                            <p>"Amazing service! Quick turnaround time and friendly staff."</p>
                         </div>
                         <div class="review">
                             <img class="review-image" src="#">
-                            <h4>Name</h4>
-                            <p>Body copy goes here remember this is a long text with a paragraph</p>
+                            <h4>Jane Smith</h4>
+                            <p>"Highly recommend Repair Services for all your repair needs."</p>
                         </div>
                         <div class="review">
                             <img class="review-image" src="#">
-                            <h4>Name</h4>
-                            <p>Body copy goes here remember this is a long text with a paragraph</p>
+                            <h4>Michael Johnson</h4>
+                            <p>"Professional and reliable. They saved my data when I thought it was lost forever."</p>
                         </div>
                     </div>
                 </section>
@@ -112,20 +115,20 @@
                     <h2>Frequently asked questions</h2>
                     <div class="questions-feed">
                         <div class="question-container">
-                            <h4 class="question">Question</h4>
-                            <p class="answer">Body copy goes here remember this is a long text with a paragraph</p>
+                            <h4 class="question">How long does a typical repair take?</h4>
+                            <p class="answer">Repair times vary depending on the issue, but we strive to complete most repairs within 24-48 hours.</p>
                         </div>
                         <div class="question-container">
-                            <h4 class="question">Question</h4>
-                            <p class="answer">Body copy goes here remember this is a long text with a paragraph</p>
+                            <h4 class="question">Do you offer warranty on repairs?</h4>
+                            <p class="answer">Yes, we provide a warranty on all our repair services for added peace of mind.</p>
                         </div>
                         <div class="question-container">
-                            <h4 class="question">Question</h4>
-                            <p class="answer">Body copy goes here remember this is a long text with a paragraph</p>
+                            <h4 class="question">Can you repair devices not listed on your website?</h4>
+                            <p class="answer">Absolutely! Contact us with details about your device, and we'll let you know how we can help.</p>
                         </div>
                         <div class="question-container">
-                            <h4 class="question">Question</h4>
-                            <p class="answer">Body copy goes here remember this is a long text with a paragraph</p>
+                            <h4 class="question">Do you offer pickup and delivery services?</h4>
+                            <p class="answer">Yes, we offer convenient pickup and delivery options for our customers' convenience.</p>
                         </div>
                     </div>
                 </section>
@@ -139,27 +142,33 @@
                         <p>Reach out to us for reliable and prompt repair services.</p>
                         <!-- Include a contact form or contact information here -->
                         <button>Call us</button>
+
+                        <form>
+                            <h4>Enter your data and we will get back to you!</h4>
+                            <input type="text" placeholder="Your name">
+                            <input type="number" placeholder="Your phone number">
+                            <input type="email" placeholder="Your email">
+                            <button class="submit-button" id="submit-button">Submit</button>
+                        </form>
                     </div>
                 </section>
             </main>
 
             <footer>
                 <div class="footer-menu">
-                    <h1 class="logo">Repair Services</h1>
+                    <h1 class="logo">Orbita</h1>
                     <!-- <img class="logo" src="#"> -->
-                    <nav>
+                    <nav class="desktop-nav-footer">
                         <ul>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">About you</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about-us">About us</a></li>
+                            <li><a href="#feedback">About you</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                     <button>Call us</button>
                 </div>
-                <div>
                     <p class="copy-info">&copy; 2024 Repair Services</p>
-                </div>
             </footer>
         </div>
         <script src="index.js" type="module"></script>
