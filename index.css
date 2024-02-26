@@ -78,6 +78,10 @@ nav li {
     cursor: pointer;
 }
 
+nav li:hover {
+    text-decoration: underline;
+}
+
 .mobile-menu-container {
     display: none; /* flex when displayed */
     flex-direction: column;
@@ -284,6 +288,24 @@ footer {
     gap: 1rem;
 }
 
+.feedback-container {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-color: #F9FAFB;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 12px #28A9F1;
+}
+
+.feedback-img {
+    width: 50%;
+    margin: auto;
+}
+
 /* Buttons */
 
 button {
@@ -471,6 +493,11 @@ nav a {
 
     p.copy-info {
         margin-top: 0;
+    }
+
+    .feedback-container {
+        bottom: 30px;
+        right: 40px;
     }
 
     /* Images */
