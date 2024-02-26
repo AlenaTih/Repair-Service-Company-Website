@@ -56,6 +56,9 @@ header {
     text-align: center;
     /* background-color: #070B0E; */
     background-color: #111827;
+    background-image: url(images/header-background-image.png);
+    background-position: center;
+    background-size: cover;
     padding: 2.5rem;
     width: 100%;
 }
@@ -71,7 +74,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 1.25rem;
+    margin-right: 2rem;
     cursor: pointer;
 }
 
@@ -91,6 +94,10 @@ nav li {
     flex-direction: column;
 }
 
+.mobile-menu-container li {
+    margin-top: 0.5rem;
+}
+
 .about-you-item {
     color: whitesmoke;
     font-weight: bold;
@@ -101,13 +108,18 @@ nav li {
     flex-direction: column;
     background-color: #090909;
     position: absolute;
-    top: 2.5rem;
+    top: 8rem;
     padding: 1.5rem;
     border-radius: 8px;
 }
 
 .about-you-menu li {
    display: block;
+   margin: 0 1rem;
+}
+
+.about-you-menu li:last-of-type {
+    margin-top: 1rem;
 }
 
 section.top {
@@ -116,15 +128,22 @@ section.top {
     justify-content: space-between;
     gap: 1rem;
     padding: 1rem 2.5rem 3.5rem 2.5rem;
-    border-bottom: 1px solid darkgray;
+    /* border-bottom: 1px solid darkgray; */
+}
+
+div.top-image-container,
+div.about-image-container,
+div.map-image-container {
+    width: 100%;
 }
 
 section.services {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #DBCBB4;
     padding: 2.5rem;
-    border-bottom: 1px solid darkgray;
+    /* border-bottom: 1px solid darkgray; */
 }
 
 div.services-feed {
@@ -156,7 +175,7 @@ section.about-us {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    padding: 3.5rem 2.5rem 3.5rem 2.5rem;
+    padding: 3.5rem 2.5rem 4.5rem 2.5rem;
     border-bottom: 1px solid darkgray;
 }
 
@@ -165,7 +184,7 @@ section.feedback {
     flex-direction: column;
     align-items: center;
     padding: 2.5rem;
-    border-bottom: 1px solid darkgray;
+    /* border-bottom: 1px solid darkgray; */
 }
 
 div.feedback-feed {
@@ -184,12 +203,17 @@ div.review {
     width: 100%;
 }
 
+div.review p {
+    margin-top: 0;
+}
+
 section.questions {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #DBCBB4;
     padding: 2.5rem;
-    border-bottom: 1px solid darkgray;
+    /* border-bottom: 1px solid darkgray; */
 }
 
 /* .questions h2 {
@@ -234,7 +258,7 @@ form {
 
 input {
     background-color: whitesmoke;
-    padding: 0.5rem;
+    padding: 0.5em;
     border-radius: 8px;
     border: none;
 }
@@ -267,15 +291,31 @@ button {
     color: #070B0E;
     background-color: whitesmoke;
     font-weight: 700;
-    padding: 0.5rem 1rem;
+    padding: 0.5em 1em;
     border: none;
     border-radius: 8px;
     cursor: pointer;
 }
 
+.top .call-button,
+.about-us .call-button,
+.contact .call-button {
+    margin-top: 1em;
+}
+
+.call-button:hover {
+    background-color: #B0B8BF;
+}
+
 .submit-button {
     color: whitesmoke;
     background-color: #67595E;
+    margin-top: 1rem;
+    padding: 1em;
+}
+
+.submit-button:hover {
+    background-color: #D9AA71;
 }
 
 /* Images */
@@ -283,25 +323,22 @@ button {
 .top-image,
 .about-image,
 .map-image {
-    height: 150px;
-    width: 300px;
+    /* height: 150px;
+    width: 300px; */
+    width: 100%;
     border-radius: 8px;
-    border: 1px solid darkblue;
 }
 
 .service-image {
-    height: 100px;
-    width: 150px;
+    width: 100%;
     /* align-self: flex-start; */
     border-radius: 8px;
-    border: 1px solid darkblue;
+    /* border: 1px solid darkblue; */
 }
 
 .review-image {
-    height: 75px;
-    width: 75px;
     border-radius: 50%;
-    border: 1px solid darkblue;
+    width: 70%;
 }
 
 /* Links */
@@ -345,6 +382,26 @@ nav a {
         font-size: 2.5rem;
     }
 
+    h2 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    p,
+    button,
+    input {
+        font-size: 1.125rem;
+    }
+
+    .desktop-nav,
+    .about-you-menu,
+    .desktop-nav-footer {
+        font-size: 1.2rem;
+    }
+
     /* Layout */
 
     header {
@@ -355,20 +412,49 @@ nav a {
         display: none;
     }
 
-    .about-you-menu {
-        top: 8rem;
-    }
-
     section {
         width: 80%;
+    }
+
+    section.top,
+    section.about-us {
+        gap: 2rem;
+    }
+
+    section.top,
+    section.about-us,
+    section.services,
+    section.questions {
+        margin-top: 2.5rem;
+    }
+
+    section.services,
+    section.questions {
+        border-radius: 20px;
     }
 
     div.service-card {
         width: 40%;
     }
 
+    div.top-image-container {
+        width: 55%;
+    }
+
+    div.about-image-container {
+        width: 50%;
+    }
+
+    div.about-us-text {
+            width: 45%;
+    } 
+
+    div.map-image-container {
+        width: 40%;
+    }
+
     div.review {
-        width: 25%;
+        width: 30%;
     }
 
     form {
@@ -389,22 +475,12 @@ nav a {
 
     /* Images */
 
-    .top-image,
-    .about-image,
-    .map-image {
-        height: 400px;
-        width: 400px;
-    }
-
     .service-image {
-        height: 200px;
-        width: 200px;
         align-self: flex-start;
     }
 
-    .review-image {
-        height: 100px;
-        width: 100px;
+    .map-image {
+        aspect-ratio: 4/4;
     }
 
 }
