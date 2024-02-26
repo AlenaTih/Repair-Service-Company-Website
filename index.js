@@ -23,6 +23,8 @@ const inputNameEl = document.getElementById("input-name")
 const inputPhoneEl = document.getElementById("input-phone")
 const inputEmailEl = document.getElementById("input-email")
 
+const feedbackContainer = document.getElementById("feedback-container")
+
 let inputValue = {
     name: "",
     phoneNumber: "",
@@ -37,8 +39,10 @@ document.addEventListener("click", function(e) {
     } else if (e.target.id === "submit-button") {
         e.preventDefault()
         submitContactData()
-    } else if(e.target.dataset.call) {
+    } else if (e.target.dataset.call) {
         makeACall()
+    } else if (e.target.id === "feedback-container" || feedbackContainer.contains(e.target)) {
+        handleFeedbackClick()
     }
 })
 
@@ -116,3 +120,15 @@ function submitContactData() {
 function makeACall() {
     alert("Calling us ❤️")
 }
+
+function handleFeedbackClick() {
+    alert("Starting a chat ❤️")
+}
+
+function getFooterYear() {
+    const date = new Date()
+    const year = date.getFullYear()
+    document.getElementById("footer-year").textContent = year
+}
+
+getFooterYear()
