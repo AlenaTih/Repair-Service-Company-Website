@@ -1,8 +1,12 @@
 const mobileNav = document.getElementById("mobile-nav")
+const aboutYouItem = document.getElementById("about-you-item")
+const aboutYouMenu = document.getElementById("about-you-menu")
 
 document.addEventListener("click", function(e) {
     if (e.target.id === "hamburger") {
         showMenu()
+    } else if (e.target.id === "about-you-item") {
+        showYouMenu()
     }
 })
 
@@ -14,12 +18,23 @@ function showMenu() {
         <ul>
             <li><a href="#services">Services</a></li>
             <li><a href="#about-us">About us</a></li>
-            <li><a href="#feedback">About you</a></li>
+            <li><a href="#feedback">Feedback from our clients</a></li>
+            <li><a href="#questions">FAQ</a></li>
             <li><a href="#contact">Contact</a></li>
         <ul>
     </div>`
     document.getElementById("mobile-menu-container").style.display = "flex"
     document.getElementById("mobile-menu-container").style.flexDirection = "column"
+}
+
+function showYouMenu() {
+    aboutYouMenu.innerHTML = `
+        <ul>
+            <li><a href="#feedback">Feedback from our clients</a></li>
+            <li><a href="#questions">FAQ</a></li>
+        </ul>`
+
+    aboutYouMenu.style.display = "flex"
 }
 
 function rootClick(e) {
@@ -34,5 +49,12 @@ function rootClick(e) {
             document.getElementById("mobile-menu-container").style.display = "none"
             mobileNav.innerHTML = `
                 <i class="fa-solid fa-bars" id="hamburger"></i>`
-        }
+        } else if (aboutYouMenu &&
+            aboutYouMenu.style.display === "flex" &&
+            e.target.id !== "about-you-menu" &&
+            e.target.id !== "about-you-item" &&
+            !aboutYouMenu.contains(e.target)) {
+            // Element clicked was not the dropdown aboutYouMenu — close the aboutYouMenu
+            aboutYouMenu.style.display = "none"
+            }
 }

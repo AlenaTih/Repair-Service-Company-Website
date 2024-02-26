@@ -65,6 +65,12 @@ nav ul {
     padding: 0;
 }
 
+nav li {
+    display: inline;
+    margin-right: 1.25rem;
+    cursor: pointer;
+}
+
 .mobile-menu-container {
     display: none; /* flex when displayed */
     flex-direction: column;
@@ -81,10 +87,23 @@ nav ul {
     flex-direction: column;
 }
 
-nav li {
-    display: inline;
-    margin-right: 1.25rem;
-    cursor: pointer;
+.about-you-item {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.about-you-menu {
+    display: none; /* flex when displayed */
+    flex-direction: column;
+    background-color: #090909;
+    position: absolute;
+    top: 2.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.about-you-menu li {
+   display: block;
 }
 
 section.top {
@@ -330,6 +349,10 @@ nav a {
     
     .mobile-nav {
         display: none;
+    }
+
+    .about-you-menu {
+        top: 8rem;
     }
 
     section {
