@@ -13,6 +13,7 @@ body {
     background-size: cover; */
     margin: 0;
     padding: 0;
+    user-select: text;
 }
 
 /* Typography and icons */
@@ -455,6 +456,15 @@ nav a {
         border-radius: 20px;
     }
 
+    section.contact-ru {
+        justify-content: space-between;
+        gap: 2.5rem;
+    }
+
+    .contact-text-ru {
+        width: 50%;
+    }
+
     div.service-card {
         width: 40%;
     }
@@ -480,7 +490,7 @@ nav a {
     }
 
     form {
-        margin-top: 4.5rem;
+        margin-top: 2.5rem;
     }
 
     footer {

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Repair Services</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="favicon-32x32.png">
+        <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google Fonts -->
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 class="logo">Orbita</h1>
+                <!-- <img class="logo" src="#"> -->
+
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#about-us">О нас</a></li>
+                        <li class="about-you-item" id="about-you-item-ru">О вас</li>
+                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="index.html">En</a></li>
+                    </ul>
+                </nav>
+                <button class="call-button" data-call="id">Позвонить</button>
+
+                <nav class="about-you-menu" id="about-you-menu-ru">
+                </nav>
+
+                <nav class="mobile-nav" id="mobile-nav-ru">
+                    <i class="fa-solid fa-bars" id="hamburger-ru"></i>
+                </nav>
+            </header>
+            <main>
+                <section class="top">
+                    <div>
+                        <h2>Добро пожаловать в сервисный центр Орбита</h2>
+                        <p>Идеальное решение для ремонта компьютеров и бытовой техники.</p>
+                        <button class="call-button" data-call="id">Позвонить</button>
+                    </div>
+                    <div class="top-image-container">
+                        <img class="top-image" src="images/computer-repair.png">
+                    </div>
+                </section>
+
+                <section class="services" id="services">
+                    <h2>Услуги</h2>
+                    <div class="services-feed">
+                        <div class="service-card">
+                            <img class="service-image" src="images/computer-repair.png">
+                            <p>Ремонт компьютеров: профессиональные услуги по ремонту компьютеров.</p>
+                        </div>
+                        <div class="service-card">
+                            <img class="service-image" src="images/computer-repair.png">
+                            <p>Ремонт бытовой техники — от стиральных машин до холодильников.</p>
+                        </div>
+                        <div class="service-card">
+                            <img class="service-image" src="images/computer-repair.png">
+                            <p>Ремонт электронных устройств: мы ремонтируем смартфоны, планшеты и многое другое.</p>
+                        </div>
+                        <div class="service-card">
+                            <img class="service-image" src="images/computer-repair.png">
+                            <p>Настройка домашней сети: обеспечим бесперебойную работу вашей домашней сети.</p>
+                        </div>
+                        <div class="service-card">
+                            <img class="service-image" src="images/computer-repair.png">
+                            <p>Устранение неполадок программного обеспечения: решение проблем с программным обеспечением для бесперебойной работы ваших устройств.</p>
+                        </div>
+                        <div class="service-card">
+                            <img class="service-image" src="images/computer-repair.png">
+                            <p>Восстановление данных: мы можем помочь восстановить потерянные данные с ваших устройств.</p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="about-us" id="about-us">
+                    <div class="about-us-text">
+                        <h2>О нас</h2>
+                        <p>Мы занимаемся предоставлением первоклассных услуг по ремонту с момента появления первого компьютера. 
+                            Имея за плечами многолетний опыт, мы гарантируем качественный сервис и удовлетворенность клиентов.
+                        </p>
+                        <button class="call-button" data-call="id">Позвонить</button>
+                    </div>
+                    <div class="about-image-container">
+                        <img class="about-image" src="images/computer-repair.png">
+                    </div>
+                </section>
+
+                <section class="feedback" id="feedback">
+                    <h2>Отзывы клиентов</h2>
+                    <div class="feedback-feed">
+                        <div class="review">
+                            <img class="review-image" src="images/john.png">
+                            <h4>Анатолий</h4>
+                            <p>"Потрясающий сервис! Быстрое время выполнения заказа и дружелюбный персонал."</p>
+                        </div>
+                        <div class="review">
+                            <img class="review-image" src="images/jane.png">
+                            <h4>Мария</h4>
+                            <p>"С удовольствием рекомендую сервисный центр Орбита для всех ваших ремонтных нужд!"</p>
+                        </div>
+                        <div class="review">
+                            <img class="review-image" src="images/michael.png">
+                            <h4>Александр</h4>
+                            <p>"Профессионально и надежно. Спасли мои данные, когда я думал, что они потеряны навсегда."</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="questions" id="questions">
+                    <h2>Часто задаваемые вопросы</h2>
+                    <div class="questions-feed">
+                        <div class="question-container">
+                            <h4 class="question">Сколько времени занимает типовой ремонт?</h4>
+                            <p class="answer">Сроки ремонта зависят от конкретной проблемы, но мы стремимся выполнить большую часть ремонта в течение 24–48 часов.</p>
+                        </div>
+                        <div class="question-container">
+                            <h4 class="question">Предоставляете ли вы гарантию на ремонт?</h4>
+                            <p class="answer">Да, мы предоставляем гарантию на все наши ремонтные услуги для вашего спокойствия.</p>
+                        </div>
+                        <div class="question-container">
+                            <h4 class="question">Можете ли вы отремонтировать устройства, которых нет на вашем сайте?</h4>
+                            <p class="answer">Конечно! Свяжитесь с нами и сообщите подробную информацию о вашем устройстве, и мы скажем, как мы можем помочь.</p>
+                        </div>
+                        <div class="question-container">
+                            <h4 class="question">Предлагаете ли вы услуги доставки?</h4>
+                            <p class="answer">Да, для удобства наших клиентов мы предлагаем удобные варианты самовывоза и доставки.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact contact-ru" id="contact">
+                    <div class="map-image-container">
+                        <img class="map-image" src="images/computer-repair.png">
+                    </div>
+                    <div class="contact-text-ru">
+                        <h2>Контакты</h2>
+                        <p>Обращайтесь к нам за надежным и быстрым ремонтом. 
+                            <br><br>Позвоните нам сегодня, чтобы назначить встречу или узнать о наших услугах.</p>
+                        <!-- Include a contact form or contact information here -->
+                        <button class="call-button" data-call="id">Позвонить</button>
+
+                        <form id="form-ru">
+                            <h4>Оставьте ваши контакты, и мы свяжемся с вами в течение рабочего дня!</h4>
+                            <input id="input-name-ru" type="text" placeholder="Имя" aria-label="Name" required>
+                            <input id="input-phone-ru" type="number" placeholder="Номер телефона" aria-label="Phone number">
+                            <input id="input-email-ru" type="email" placeholder="Email" aria-label="Email" required>
+                            <button class="submit-button" id="submit-button-ru">Отправить</button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <div class="footer-menu">
+                    <h1 class="logo">Orbita</h1>
+                    <!-- <img class="logo" src="#"> -->
+                    <nav class="desktop-nav-footer">
+                        <ul>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#about-us">О нас</a></li>
+                            <li><a href="#feedback">Отзывы клиентов</a></li>
+                            <li><a href="#questions">FAQ</a></li>
+                            <li><a href="#contact">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button class="call-button" data-call="id">Позвонить</button>
+                </div>
+                    <p class="copy-info">&copy; <span class="footer-year" id="footer-year"></span> Repair Services</p>
+            </footer>
+        </div>
+        <div class="feedback-container" id="feedback-container">
+            <img class="feedback-img" src="images/comments.png">
+        </div>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
