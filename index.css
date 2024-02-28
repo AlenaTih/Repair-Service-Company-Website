@@ -202,7 +202,6 @@ section.feedback {
     flex-direction: column;
     align-items: center;
     padding: 2.5rem;
-    /* border-bottom: 1px solid darkgray; */
 }
 
 div.feedback-feed {
@@ -423,8 +422,17 @@ nav a {
         padding-bottom: 1.2rem;
     }
 
+    section.services h2 {
+        margin-bottom: 0.8rem;
+    }
+
     section.about-us {
         padding-top: 2.5rem;
+    }
+
+    section.feedback {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     section.questions {
@@ -490,16 +498,25 @@ nav a {
     }
 
     section.top,
-    section.about-us,
     section.services,
     section.questions {
         margin-top: 2.5rem;
+    }
+
+    section.about-us {
+        margin-top: 2rem;
+        padding-bottom: 5rem;
     }
 
     section.services,
     section.questions {
         border-radius: 20px;
         box-shadow: 0 0 2px #8C7D74;
+    }
+
+    section.services {
+        padding-top: 3rem;
+        /* padding-bottom: 3rem; */
     }
 
     section.contact-ru {
