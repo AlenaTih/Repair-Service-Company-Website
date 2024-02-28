@@ -97,11 +97,12 @@ nav li:hover {
 .mobile-menu-container {
     display: none; /* flex when displayed */
     flex-direction: column;
+    align-items: center;
     background-color: #090909;
     position: absolute;
     top: 2.5rem;
     right: 0;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 1.5rem 3rem;
     border-radius: 8px;
 }
 
