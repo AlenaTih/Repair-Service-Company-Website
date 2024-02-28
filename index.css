@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #070B0E;
     /* color: whitesmoke; */
@@ -467,6 +467,11 @@ nav a {
 
     div.service-card {
         width: 40%;
+    }
+
+    div.top-text-container-ru {
+        width: 55%;
+        margin-right: 1rem;
     }
 
     div.top-image-container {
