@@ -38,6 +38,7 @@ footer {
 }
 
 .bold {
+    color: #4B3127;
     font-weight: 600;
 }
 
@@ -316,11 +317,6 @@ footer {
     box-shadow: 0 2px 12px #28A9F1;
 }
 
-.feedback-img {
-    width: 50%;
-    margin: auto;
-}
-
 /* Buttons */
 
 button {
@@ -386,6 +382,12 @@ img {
 .review-image {
     border-radius: 50%;
     width: 70%;
+}
+
+.feedback-img {
+    width: 50%;
+    margin: auto;
+    box-shadow: none;
 }
 
 /* Links */
