@@ -194,7 +194,7 @@ section.about-us {
     justify-content: space-between;
     gap: 1rem;
     padding: 3.5rem 2.5rem 4.5rem 2.5rem;
-    border-bottom: 1px solid darkgray;
+    border-bottom: 1px solid #BFB7B0;
 }
 
 section.feedback {
@@ -414,9 +414,17 @@ nav a {
         flex-direction: column;
     }
 
+    section.questions {
+        padding-bottom: 1.5rem;
+    }
+
     .top-image,
     .about-image {
         margin-top: 2rem;
+    }
+
+    .map-image {
+        margin-top: 1rem;
     }
 
 }
