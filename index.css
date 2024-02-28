@@ -286,7 +286,7 @@ footer {
     /* background-color: #070B0E; */
     background-color: #111827;
     width: 100%;
-    padding: 3.5rem 2.5rem 2.5rem;
+    padding: 3.5rem 2.5rem 4.5rem;
 }
 
 .footer-menu {
@@ -569,10 +569,6 @@ nav a {
 
     form {
         margin-top: 2.5rem;
-    }
-
-    footer {
-        height: 300px;
     }
 
     .desktop-nav-footer {
