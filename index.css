@@ -106,6 +106,11 @@ nav li:hover {
     border-radius: 8px;
 }
 
+.mobile-menu-container ul {
+    padding: 0;
+    margin-right: 0;
+}
+
 .mobile-nav ul {
     display: flex;
     flex-direction: column;
