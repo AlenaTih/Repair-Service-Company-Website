@@ -519,6 +519,10 @@ nav a {
         /* padding-bottom: 3rem; */
     }
 
+    section.contact {
+        padding-bottom: 3rem;
+    }
+
     section.contact-ru {
         justify-content: space-between;
         gap: 2.5rem;
