@@ -154,34 +154,7 @@ function rootClick(e) {
                             }
 }
 
-// function submitContactData() {
-//     // const form = document.querySelector("form")
-//     const form = document.getElementById("form-en")
-
-//     if (form) {
-//         if (!form.checkValidity()) {
-//             // If the form is not valid, prevent submition
-//             // The form is valid when the name and email input fields are not empty
-//             alert("Please type in your name and email ❤️")
-//         } else {
-//             alert(`Thank you, ${inputNameEl.value} ❤️ We will contact you soon!`)
-    
-        
-//             // Update inputValue with input values
-//             inputValue.name = inputNameEl.value
-//             inputValue.phoneNumber = inputPhoneEl.value
-//             inputValue.email = inputEmailEl.value
-    
-//             // Push the contact data item to the database
-//             push(contactDatainDB, inputValue)
-    
-//         }
-//     }
-// }
-
 function submitContactData() {
-    // const form = document.querySelector("form")
-    // const form = document.getElementById("form-en")
 
         if (!inputNameEl.value) {
             // If the form is not valid, prevent submition
@@ -204,34 +177,7 @@ function submitContactData() {
         }
 }
 
-// function submitContactDataRu() {
-//     // const form = document.querySelector("form")
-//     const form = document.getElementById("form-ru")
-
-//     if (form) {
-//         if (!form.checkValidity()) {
-//             // If the form is not valid, prevent submition
-//             // The form is valid when the name and email input fields are not empty
-//             alert("Please type in your name and email ❤️")
-//         } else {
-//             alert(`Thank you, ${inputNameEl.value} ❤️ We will contact you soon!`)
-    
-        
-//             // Update inputValue with input values
-//             inputValue.name = inputNameElRu.value
-//             inputValue.phoneNumber = inputPhoneElRu.value
-//             inputValue.email = inputEmailElRu.value
-    
-//             // Push the contact data item to the database
-//             push(contactDatainDB, inputValue)
-    
-//         }
-//     }
-// }
-
 function submitContactDataRu() {
-    // const form = document.querySelector("form")
-    // const form = document.getElementById("form-ru")
 
         if (!inputNameElRu.value) {
             // If the form is not valid, prevent submition
