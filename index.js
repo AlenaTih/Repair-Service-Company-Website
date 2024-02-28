@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
-import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 const firebaseConfig = {
     apiKey: "AIzaSyChR30UHiZ4u-_t1mbqPfBTY0g57Smr_HA",
@@ -156,11 +156,11 @@ function rootClick(e) {
 
 function submitContactData() {
 
-        if (!inputNameEl.value) {
+        if (!inputNameEl.value.trim()) {
             // If the form is not valid, prevent submition
             // The form is valid when the name and email input fields are not empty
             alert("Please type in your name and email ❤️")
-        } else if (!inputEmailEl.value) {
+        } else if (!inputEmailEl.value.trim()) {
             alert("Please type in your name and email ❤️")
         } else {
             alert(`Thank you, ${inputNameEl.value} ❤️ We will contact you soon!`)

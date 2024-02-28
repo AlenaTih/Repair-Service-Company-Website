@@ -31,6 +31,10 @@ i {
     cursor: pointer;
 }
 
+.bold {
+    font-weight: 600;
+}
+
 /* Layout */
 
 main {
@@ -146,6 +150,7 @@ section.services {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* justify-content: center; */
     background-color: #DBCBB4;
     padding: 2.5rem;
     /* border-bottom: 1px solid darkgray; */
@@ -167,11 +172,13 @@ div.service-card {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
     width: 100%;
     margin: 0 auto;
 }
 
 .service-card p {
+    height: 100%;
     width: 100%;
 }
 
@@ -266,6 +273,7 @@ input {
     padding: 0.5em;
     border-radius: 8px;
     border: none;
+    box-shadow: 0 0 2px #8C7D74;
 }
 
 footer {
@@ -320,6 +328,10 @@ button {
     cursor: pointer;
 }
 
+.call-button {
+    box-shadow: 0 0 4px #8C7D74;
+}
+
 .top .call-button,
 .about-us .call-button,
 .contact .call-button {
@@ -335,6 +347,7 @@ button {
     background-color: #67595E;
     margin-top: 1rem;
     padding: 1em;
+    box-shadow: 0 2px 2px #8C7D74;
 }
 
 .submit-button:hover {
@@ -342,6 +355,10 @@ button {
 }
 
 /* Images */
+
+img {
+    box-shadow: 0 0 4px #8C7D74;
+}
 
 .top-image,
 .about-image,
@@ -356,7 +373,6 @@ button {
     width: 100%;
     /* align-self: flex-start; */
     border-radius: 8px;
-    /* border: 1px solid darkblue; */
 }
 
 .review-image {
@@ -454,6 +470,7 @@ nav a {
     section.services,
     section.questions {
         border-radius: 20px;
+        box-shadow: 0 0 2px #8C7D74;
     }
 
     section.contact-ru {
