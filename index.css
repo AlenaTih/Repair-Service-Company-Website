@@ -584,6 +584,10 @@ nav a {
         right: 40px;
     }
 
+    footer {
+        padding-top: 3rem;
+    }
+
     /* Images */
 
     .service-image {
