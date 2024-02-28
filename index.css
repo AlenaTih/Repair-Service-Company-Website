@@ -508,6 +508,11 @@ nav a {
         padding-bottom: 5rem;
     }
 
+    section.questions {
+       padding-top: 3.5rem;
+       padding-bottom: 3rem;
+    }
+
     section.services,
     section.questions {
         border-radius: 20px;
