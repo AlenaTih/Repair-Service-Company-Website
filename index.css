@@ -38,6 +38,10 @@ footer {
     text-shadow: 0px 0px 20px #242424;
 }
 
+p.copy-info {
+    margin-top: 1.5rem;
+}
+
 .bold {
     color: #4B3127;
     font-weight: 600;
