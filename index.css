@@ -548,8 +548,8 @@ nav a {
         width: 40%;
     }
 
-    div.top-text-container-ru,
-    div.top-text-container {
+    div.top-text-container,
+    div.top-text-container-ru {
         width: 50%;
         margin-right: 1rem;
     }
