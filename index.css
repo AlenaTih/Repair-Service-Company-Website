@@ -20,7 +20,7 @@ html, body {
 /* Typography and icons */
 
 h1.logo {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     cursor: pointer;
 }
 
@@ -29,7 +29,7 @@ p.answer {
 }
 
 i {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
@@ -549,13 +549,14 @@ nav a {
         width: 40%;
     }
 
-    div.top-text-container-ru {
-        width: 55%;
+    div.top-text-container-ru,
+    div.top-text-container {
+        width: 50%;
         margin-right: 1rem;
     }
 
     div.top-image-container {
-        width: 55%;
+        width: 45%;
     }
 
     div.about-image-container {
@@ -578,21 +579,21 @@ nav a {
         margin-top: 2.5rem;
     }
 
+    footer {
+        padding-top: 3rem;
+    }
+
     .desktop-nav-footer {
         margin-bottom: 0;
     }
 
     p.copy-info {
-        margin-top: 0;
+        margin-top: 0.8rem;
     }
 
     .feedback-container {
         bottom: 30px;
         right: 40px;
-    }
-
-    footer {
-        padding-top: 3rem;
     }
 
     /* Images */
