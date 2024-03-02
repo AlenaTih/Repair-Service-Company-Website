@@ -68,7 +68,7 @@ section {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     color: whitesmoke;
     text-align: center;
     /* background-color: #070B0E; */
