@@ -68,10 +68,9 @@ section {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     color: whitesmoke;
     text-align: center;
-    /* background-color: #070B0E; */
     background-color: #111827;
     background-image: url(images/header-background-image.png);
     background-position: center;
@@ -407,6 +406,10 @@ nav a {
 
 /* @media (width <= 599px) */
 @media (max-width: 599px) {
+    header {
+        justify-content: space-between;
+    }
+
     .desktop-nav {
         display: none;
     }
