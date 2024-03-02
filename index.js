@@ -165,7 +165,6 @@ function submitContactData() {
         } else {
             alert(`Thank you, ${inputNameEl.value} ❤️ We will contact you soon!`)
     
-        
             // Update inputValue with input values
             inputValue.name = inputNameEl.value
             inputValue.phoneNumber = inputPhoneEl.value
@@ -173,6 +172,11 @@ function submitContactData() {
     
             // Push the contact data item to the database
             push(contactDatainDB, inputValue)
+
+            // Clear input fields after submitting the form
+            inputNameEl.value = ""
+            inputPhoneEl.value = ""
+            inputEmailEl.value = ""
     
         }
 }
@@ -186,8 +190,7 @@ function submitContactDataRu() {
         } else if (!inputEmailElRu.value) {
             alert("Пожалуйста, укажите ваше имя и email ❤️")
         } else {
-            alert(`Спасибо, ${inputNameElRu.value} ❤️ Мы скоро свяжемся с вами!`)
-    
+            alert(`Спасибо, ${inputNameElRu.value} ❤️ Мы скоро свяжемся с вами!`)    
         
             // Update inputValue with input values
             inputValue.name = inputNameElRu.value
@@ -196,6 +199,11 @@ function submitContactDataRu() {
     
             // Push the contact data item to the database
             push(contactDatainDB, inputValue)
+
+            // Clear input fields after submitting the form
+            inputNameElRu.value = ""
+            inputPhoneElRu.value = ""
+            inputEmailElRu.value = ""
     
         }
 }
