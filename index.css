@@ -335,6 +335,16 @@ button {
 }
 
 .call-button {
+    font-family: inherit;
+    font-size: 1rem;
+    color: #070B0E;
+    text-decoration: none;
+    background-color: whitesmoke;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
     box-shadow: 0 0 4px #8C7D74;
 }
 
@@ -484,6 +494,7 @@ nav a {
 
     p,
     button,
+    .call-button,
     input {
         font-size: 1.125rem;
     }
