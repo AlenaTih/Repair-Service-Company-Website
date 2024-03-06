@@ -72,7 +72,7 @@ header {
     color: whitesmoke;
     text-align: center;
     background-color: #111827;
-    background-image: url(images/header-background-image.png);
+    background-image: url("images/header-background-image.png");
     background-position: center;
     background-size: cover;
     padding: 2.5rem;
